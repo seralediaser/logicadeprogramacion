@@ -12,8 +12,6 @@
     }
     function calcularimc(peso,altura) { 
         return (peso / (altura * altura));
-        
-        
     }  
 
     nombre = prompt("informe su nombre")
@@ -22,7 +20,25 @@
 
     imcCalculado = calcularimc(pesoInformado,alturaInformado) 
 
-    imprimir(nombre + ", su IMC calculado es: " + imcCalculado)
+    imprimir(nombre + ", su IMC calculado es: " + imcCalculado) 
+    
+     if (imcCalculado > 30) { 
+    imprimir("El paciente se considera obeso clase I"); 
+    }
+
+    if (imcCalculado < 18.5) {
+    imprimir("El paciente se considera de bajo peso");
+    } 
+
+    if (imcCalculado > 18.6)  { 
+        if (imcCalculado  < 25)
+            imprimir("El paciente es de peso normal");
+    } 
+
+    if (imcCalculado > 25.1) { 
+        if (imcCalculado  < 30)
+    imprimir("El paciente es de peso normal");
+    }
 
 
 
