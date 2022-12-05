@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>TABLA DEL CINCO</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea(); 
+    } 
+
+    var multiplicador = 1 
+
+    while (multiplicador <= 10 ){
+
+        imprimir(5 * multiplicador);
+        multiplicador = multiplicador +1;
+
+    }
+
+</script>
