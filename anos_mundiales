@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1>AÑOS MUNDIALES REALIZADOS</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea(); 
+    } 
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año límite para calcular los años de los mundiales "))
+
+    while (anhoMundial <= limite){
+
+        imprimir("Hubo mundial de la fifa en el año " + anhoMundial); 
+        anhoMundial = anhoMundial + 4;
+
+    }
+
+    imprimir("Fin")
+
+</script>
