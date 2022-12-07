@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea(); 
+    }
+    
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+    var intentos = 3;
+    var contador = 1;
+
+    while(contador <= intentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        }
+
+        else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+
+        contador++; 
+    }    
+
+    if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) {
+        imprimir("BIENVENIDO"); 
+    }       
+
+    else{ 
+        imprimir("Acceso denegado. usaste 3 intentos, por favor recupera su contraseña para acceder a alura. Gracias"); 
+    }        
+</script>
