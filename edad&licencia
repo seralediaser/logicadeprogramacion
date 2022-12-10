@@ -10,7 +10,7 @@
         saltarLinea();
     }
 
-    var edad = prompt("¿cuál es la edad?")
+    var edad = parseInt(prompt("¿cuál es la edad?"))
     var tieneLicencia = prompt("¿Tienes licencia? Responde S o N")
 
     if((edad > 18) && (tieneLicencia == "S")){
