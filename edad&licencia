@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = prompt("¿cuál es la edad?")
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N")
+
+    if((edad > 18) && (tieneLicencia == "S")){
+
+        alert("Adelante, puede maNejar el carro");
+    }
+
+    else{ 
+
+        alert("Paré, usted no puede conducir")
+        alert("Si es mayor de edad, salga y saque su licencia")
+        alert("Ahora si es menor de edad y tiene licencia. Eso debe ser raro")
+    }
+
+
+</script>
